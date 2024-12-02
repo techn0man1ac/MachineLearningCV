@@ -201,7 +201,7 @@ def plotsClear():
     plt.clf()
 
 # Set the title for the web app
-st.title('HW 16')
+st.title('Machine Learning CV app')
 
 # Create a navigation menu using streamlit_option_menu
 selected = option_menu(menu_title=None, options=["CNN", "VGG16", "Models test"],
