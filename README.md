@@ -45,6 +45,8 @@ Only the VGG16 main unit (frozen) is used.
 
 # 🖼️ How to work with the application
 
+![Recognize image screenshot](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/RecognizeImage.png)
+
 1. Training models
 Select CNN or VGG16 in the menu.
 Enter the number of epochs and click “Train model”.
@@ -53,7 +55,7 @@ Upload an image in .jpg, .jpeg, .png, or .gif format.
 Select a model (CNN or VGG16).
 Click “Recognize image”.
 3. Saving models
-The trained models are saved in the saveModels folder in the .keras format.
+The trained models are saved in the saveModels folder in the `.keras` format.
 
 # 📂 Example result.
 
@@ -65,9 +67,11 @@ Graph of loss and accuracy.
 
 ## Image recognition
 
-![Sandal image recognition screenshot](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/Sandal.png)
+![Shirt image recognition screenshot](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/Shirt.png)
 
 Image with class prediction and probability histogram.
+
+![Lable histogram](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/LableHistogram.png)
 
 ## 📑 License
 
