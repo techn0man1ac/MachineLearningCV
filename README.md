@@ -1,68 +1,76 @@
 # ML Application with Streamlit
 
-Цей проект є веб-додатком для роботи з машинним навчанням, що дозволяє тренувати та тестувати моделі CNN і VGG16 на основі набору даних Fashion MNIST. Додаток створений з використанням **Streamlit**.
+![Model training screenshot](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/ModelTraining.png)
 
-## 📋 Опис
+This project is a web-based machine learning application that allows training and testing CNN and VGG16 models based on the Fashion MNIST dataset. The application was created using [Streamlit](https://github.com/streamlit/streamlit).
 
-Додаток має наступні функції:
-1. Тренування моделі CNN на чорно-білих зображеннях (Fashion MNIST).
-2. Тренування моделі VGG16 на кольорових зображеннях (перетворених з Fashion MNIST).
-3. Візуалізація результатів навчання, включаючи графіки втрат і точності.
-4. Тестування зображень, завантажених користувачем, на основі обраної моделі.
+# 📋 Description
 
-## 🛠️ Структура файлів
+The application has the following functions:
+1. Training the CNN model on black and white images (Fashion MNIST).
+2. Training the VGG16 model on color images (converted from Fashion MNIST).
+3. Visualization of training results, including loss and accuracy graphs.
+4. Testing of images uploaded by the user based on the selected model.
 
-- **`main.py`**: Скрипт для запуску Streamlit-додатку.
-- **`app.py`**: Основний модуль, що містить функціонал додатку, включаючи визначення моделей, тренування, візуалізацію та тестування.
+# 🛠️ File structure
 
-## Запуск додатку
+- `main.py` The script to run the Streamlit application.
+- `app.py` The main module containing the application functionality, including model definition, training, visualization, and testing.
+
+# Running the application
 
 ```bash
 python main.py
 ```
 
-Або напряму:
+Or directly:
 
 ```bash
 streamlit run main.py
 ```
 
-## 📊 Моделі
+# 📊 Models
 
-# CNN:
+## CNN:
 
-Використовує 2D конволюційні шари.
-Архітектура включає Dropout для запобігання перенавчанню.
-Тренується на зображеннях розміром 28x28 у градаціях сірого.
+Uses 2D convolutional layers.
+The architecture includes Dropout to prevent overfitting.
+Trained on 28x28 grayscale images.
 
-# VGG16:
+## VGG16:
 
-Попередньо тренована на ImageNet.
-Вхідні зображення масштабуються до розміру 32x32 з трьома каналами (RGB).
-Використовується лише головний блок VGG16 (заморожений).
+Pre-trained on ImageNet.
+Input images are scaled to 32x32 with three channels (RGB).
+Only the VGG16 main unit (frozen) is used.
 
-## 🖼️ Як працювати з додатком
+# 🖼️ How to work with the application
 
-1. Навчання моделей
-Оберіть CNN або VGG16 у меню.
-Введіть кількість епох та натисніть "Тренувати модель".
-2. Тестування
-Завантажте зображення у форматі .jpg, .jpeg, .png або .gif.
-Оберіть модель (CNN або VGG16).
-Натисніть "Розпізнати зображення".
-3. Збереження моделей
-Треновані моделі зберігаються у папці saveModels у форматі .keras.
+1. Training models
+Select CNN or VGG16 in the menu.
+Enter the number of epochs and click “Train model”.
+2. Testing
+Upload an image in .jpg, .jpeg, .png, or .gif format.
+Select a model (CNN or VGG16).
+Click “Recognize image”.
+3. Saving models
+The trained models are saved in the saveModels folder in the .keras format.
 
-## 📂 Приклад результату
+# 📂 Example result.
 
-# Графіки навчання
+## Training graphs
 
-Графік втрат (loss) та точності (accuracy).
+![Traine statistics screenshot](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/TraineStatistics.png)
 
-# Розпізнавання зображень
+Graph of loss and accuracy.
 
-Зображення з передбаченням класу та гістограма ймовірностей.
+## Image recognition
 
-## 👨‍💻 Автор
+![Sandal image recognition screenshot](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/Sandal.png)
 
-Автор проекту: Сергій Труш
+Image with class prediction and probability histogram.
+
+## 📑 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/techn0man1ac/MachineLearningCV/blob/main/LICENSE) file for details. 
+
+Streamlit software is also distributed under the [Apache-2.0 license](https://github.com/streamlit/streamlit?tab=Apache-2.0-1-ov-file).
