@@ -2,7 +2,7 @@ import os
 import subprocess 
 import logging
 
-app_file_path = 'C:\\Projects\\vscode-basics\\GoIT-Python-Data-Science\\DataScience\\HomeWork\\16\\app.py'
+app_file_path = 'C:\\Projects\\app.py'
 
 def start_app():
     try:
