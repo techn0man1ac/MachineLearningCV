@@ -11,6 +11,9 @@ The application has the following functions:
 2. Training the VGG16 model on color images (converted from Fashion MNIST).
 3. Visualization of training results, including loss and accuracy graphs.
 4. Testing of images uploaded by the user based on the selected model.
+5. Use pre-trained models in the `Model test` tab(without training). Pre-trained models should be in the `saveModels` directory. Here my prepared models:
+
+https://drive.google.com/drive/folders/11ptCnpoiAlmtYGRsQOJaR54Vhexvcw34?usp=sharing
 
 # 🛠️ File structure
 
@@ -45,17 +48,19 @@ Only the VGG16 main unit (frozen) is used.
 
 # 🖼️ How to work with the application
 
+Runn app, click the `Model Test` tab and select the image you want to recognize. After selecting the image, it will be converted to the correct format and size for submitting the model for recognition. Two models(CNN/VGG16) are trained to recognize type of product(clothing item) such as bags, T-shirts, dresses... Based on a dataset [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist).
+
 ![Recognize image screenshot](https://raw.githubusercontent.com/techn0man1ac/MachineLearningCV/refs/heads/main/screenshots/RecognizeImage.png)
 
 1. Training models
-Select CNN or VGG16 in the menu.
+Select `CNN` or `VGG16` in the menu.
 Enter the number of epochs and click “Train model”.
 2. Testing
 Upload an image in .jpg, .jpeg, .png, or .gif format.
 Select a model (CNN or VGG16).
-Click “Recognize image”.
+Click `Recognize image`.
 3. Saving models
-The trained models are saved in the saveModels folder in the `.keras` format.
+After completing the training of the models app saved traine model in the `saveModels` folder in the `.keras` format.
 
 # 📂 Example result.
 
